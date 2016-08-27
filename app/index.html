@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Traceablity Demo App</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>Traceablity Demo App</h1>
+  <h2>Example Trace across multiple TRUs</h2>
+  
+  
+  <h1>Create Activity</h1>
+  <br><label for="activityName">New Activity Name:</label><input type="text" id="activityName" placeholder="e.g., Activity_1"></input>
+  <br><label for="activityId">New Activity ID:</label><input type="text" id="activityId" placeholder="e.g., 3876"></input>
+  <br><label for="inputTru">New Activity Input TRU:</label><input type="text" id="inputTru" placeholder="e.g., 9998"></input>
+  <br><label for="outputTru">New Activity Output TRU:</label><input type="text" id="outputTru" placeholder="e.g., 9998"></input>
+  <br><br><button id="createActivity" onclick="createActivity()">Create Activity</button>
+  
+  <br><br>
+  <h1>Trace TRU</h1>
+  <br><label for="fromTru">trace from Tru Id:</label><input type="text" id="fromTru" placeholder="e.g., 9998"></input>
+    <br><label for="toTru">trace to Tru Id:</label><input type="text" id="toTru" placeholder="e.g., 9998"></input>
+  <br><button id="trace" onclick="trace()">Trace</button>
+  <br><br>
+  <span id="status"></span>
+  <br><br>
+
+  
+</body>
+</html>
